@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Watch Video - MyVideoUK</title>
-
   <style>
     body {
       margin: 0;
@@ -20,30 +19,24 @@
       justify-content: center;
       align-items: center;
     }
-    video {
-      max-width: 100%;
-      max-height: 100%;
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
     }
     #ads-container {
       flex: 1 1 50%;
-      background: #f5f5f5;
+      background: #f9f9f9;
       padding: 10px;
-      box-sizing: border-box;
     }
   </style>
-
 </head>
 <body>
   <div id="video-container">
-    <video controls autoplay>
-      <source src="https://pixeldrain.com/api/file/36WuMFct/contents" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <iframe src="https://player.vimeo.com/video/1090847938?h=f51fb6d7bb&autoplay=1" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
-
   <div id="ads-container">
-    <!-- Monetag ads iframe embed -->
-    <iframe src="https://otieu.com/4/9404116" style="width: 100%; height: 100%; border: none;" title="Monetag Ads"></iframe>
+    <iframe src="https://otieu.com/4/9404116" title="Monetag Ads"></iframe>
   </div>
 </body>
 </html>
